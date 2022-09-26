@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Object in Javascript</title>
+</head>
+<body>
+    <!-- Array object Methods -->
+    <script>
+        // 1.concat() 
+        /*
+        The concat() method concatenates (joins) two or more arrays.
+
+        The concat() method returns a new array, containing the joined arrays.
+
+        The concat() method does not change the existing arrays.
+        */
+    //    var arr1 = ['phani','satish','venky']
+    //    var arr2 = ['pappu','pavan','john']
+    //    var arr3 = ['sumanth']
+    //    var friends = arr1.concat(arr2,arr3)
+    //    document.write("The concatenation of three arrays is: "+friends)
+
+
+    // 2.// Array.prototype.indexOf() 🙋‍♂️
+
+    // Returns the first (least) index of an element within the array equal 
+    // to an element, or -1 if none is found. It search the element from the 
+    // 0th index number 
+
+     var myFriends = ['phani','satish','venky','phani']
+    // document.write(myFriends.indexOf('phani'))
+
+
+    // 3.Array.prototype.lastIndexOf() 🙋‍♂️
+    // Returns the last (greatest) index of an element within the array equal 
+    // to an element, or -1 if none is found. It search the element last to first
+    document.write("<br/>"+"The last index of the given valueis: "+myFriends.lastIndexOf('phani'))
+
+
+    
+    //4. Array.prototype.includes() 🙋‍♂️
+    // Determines whether the array contains a value, 
+    // returning true or false as appropriate.
+        document.write("<br/>"+"check the given word present in the array: "+myFriends.includes('nikhil'))
+        document.write("<br/>"+"check the given word present in the array: "+myFriends.includes('phani'))
+
+        // 5.// Array.prototype.sort() 🙋‍♂️
+
+    // The sort() method sorts the elements of an array in place and 
+    //returns the sorted array. The default sort order is ascending, built 
+    //upon converting the elements into strings, 
+    // then comparing their sequences of UTF-16 code units values.
+
+    var arr = [5,4,3,2]
+    document.write("<br/>"+"The sorted array is: "+arr.sort())
+    </script>
+</body>
+</html>
